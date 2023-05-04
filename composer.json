@@ -1,0 +1,31 @@
+{
+  "name": "courier/contracts",
+  "description": "Set of interfaces that define the services provided by Courier.",
+  "keywords": ["contracts", "interfaces", "interoperability"],
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Flavio Heleno",
+      "email": "flaviohbatista@gmail.com",
+      "homepage": "https://flavioheleno.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Courier\\Contracts\\": "src/"
+    }
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "sort-packages": true,
+    "preferred-install": "dist",
+    "allow-plugins": {
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "php": "^8.2"
+  }
+}
