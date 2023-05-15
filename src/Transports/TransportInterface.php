@@ -6,6 +6,8 @@ namespace Courier\Contracts\Transports;
 use Courier\Contracts\Messages\MessageInterface;
 
 interface TransportInterface {
+  public function purge(string $queueName): void;
+  public function pending(string $queueName): int;
   public function addRoute(string $routingKey, string $queueName): self;
   public function publish(MessageInterface $message, string $routingKey): void;
   public function collect(string $queueName): ?MessageInterface;
